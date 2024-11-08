@@ -1,32 +1,60 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Comida de Rua Brasileira</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da Rua - A melhor comida de rua da cidade!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Comida de Rua Brasileira</h1>
+        <h1>Sabores da Rua</h1>
         <nav>
             <ul>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="receitas.html">Receitas</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </header>   
-
+    </header>
 
     <main>
-        <h2>A Melhor Comida de Rua do Brasil</h2>
-        <p>Descubra os sabores autênticos da nossa culinária.</p>
-        <img src="imagem-destaque.jpg" alt="Imagem da comida de rua">
+        <section id="destaque">
+            <h2>O sabor da rua na sua mesa</h2>
+            <p>Experimente as delícias da nossa comida de rua, feita com ingredientes frescos e muita paixão.</p>
+            <img src="imagem-destaque.jpg" alt="Foto da comida de rua">
+        </section>
+
+        <section id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <ul class="cardapio">
+                <li>
+                    <h3>Pastel de Feira</h3>
+                    <p>Recheio cremoso e massa crocante.</p>
+                    <img src="pastel.jpg" alt="Pastel de Feira">
+                </li>
+                </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Entre em contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">Email:</label>
+                <input type="email"   
+ id="email" name="email">
+                <label for="mensagem">Mensagem:</label>   
+
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>Todos os direitos reservados.</p>
+        <p>&copy;   
+ Sabores da Rua - Todos os direitos reservados.</p>
     </footer>
 </body>
 </html>
-
